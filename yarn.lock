@@ -1369,6 +1369,11 @@
     "potpack" "^1.0.1"
     "zstddec" "^0.0.2"
 
+"three@^0.150.1":
+  "integrity" "sha512-5C1MqKUWaHYo13BX0Q64qcdwImgnnjSOFgBscOzAo8MYCzEtqfQqorEKMcajnA3FHy1yVlIe9AmaMQ0OQracNA=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.150.1.tgz"
+  "version" "0.150.1"
+
 "tiny-inflate@^1.0.3":
   "integrity" "sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw=="
   "resolved" "https://registry.npmjs.org/tiny-inflate/-/tiny-inflate-1.0.3.tgz"

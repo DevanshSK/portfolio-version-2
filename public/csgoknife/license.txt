@@ -1,0 +1,11 @@
+Model Information:
+* title:	M9 Bayonet (Fade)
+* source:	https://sketchfab.com/3d-models/m9-bayonet-fade-5860edcf68ae4cf18929110aa3093d8c
+* author:	Firewarden (https://sketchfab.com/Firewarden)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "M9 Bayonet (Fade)" (https://sketchfab.com/3d-models/m9-bayonet-fade-5860edcf68ae4cf18929110aa3093d8c) by Firewarden (https://sketchfab.com/Firewarden) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

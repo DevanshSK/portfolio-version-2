@@ -16,8 +16,36 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      "service_v3a7rwv",
+      "template_63srhyn",
+      {
+        from_name: form.name,
+        to_name: "Devansh",
+        from_email: form.email,
+        to_email: "work.devanshsk+portfolio@gmail.com",
+        message: form.message,
+      },
+      "mNIUYqXGwosJCzEIL"
+    )
+    .then(()=>{
+      setLoading(false);
+      alert("Thank You, I will get back to you as soon as possible.");
+      setForm({name: "", email: "", message: ""});
+    }, (error)=> {
+      setLoading(false);
+      console.log(error);
+      alert("Something Went wrong");
+    })
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -66,12 +94,18 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <button className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl" type="submit"> {loading ? "Sending...." : "Send"}</button>
+          <button
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            type="submit"
+          >
+            {" "}
+            {loading ? "Sending...." : "Send"}
+          </button>
         </form>
       </motion.div>
 
       <motion.div
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]`"
         variants={slideIn("right", "tween", 0.2, 1)}
       >
         <EarthCanvas />
